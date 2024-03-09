@@ -65,4 +65,14 @@ public class PersonController {
 	public Iterable<CityPopulationDto> getCitiesPopulation() {
 		return personService.getCitiesPopulation();
 	}
+	
+	@GetMapping("/children")
+	public Iterable<PersonDto> getChildren() {
+		return personService.getChildren();
+	}
+	
+	@GetMapping("/salary/{from}/{to}")
+	public Iterable<PersonDto> findBySalary(@PathVariable Integer from, @PathVariable Integer to) {
+		return personService.findEmployeesBySalary(from, to);
+	}
 }

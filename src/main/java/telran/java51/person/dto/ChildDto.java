@@ -3,6 +3,6 @@ package telran.java51.person.dto;
 import lombok.Getter;
 
 @Getter
-public class ChilDto extends PersonDto {
+public class ChildDto extends PersonDto {
 	String kindergarten;
 }
